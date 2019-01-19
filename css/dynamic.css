@@ -1,0 +1,39 @@
+#dynamic{
+
+   overflow: scroll;
+    /*display: flex;*/
+    /*flex-flow: column;*/
+    flex: 1;
+    /*width: 100%;*/
+    /*justify-content: space-between;*/
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.dynamic-area{
+
+    height: 125px;
+    width: 100%;
+    display: flex;
+    /*position: relative;*/
+}
+.dynamic-img{
+    /*height: 100%;*/
+    flex: 1;
+    margin-top: 1px;
+    background-position: center;
+    background-size: cover;
+
+
+}
+.dynamic-area .dynamic-img:nth-child(1){
+    margin-right: 1px;
+
+}
+.dynamic-area .dynamic-img:nth-child(3){
+    margin-left: 1px;
+
+}

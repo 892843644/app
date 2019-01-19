@@ -1,0 +1,217 @@
+
+/*横向滚动*/
+.container-wrap {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: scroll; /* 1 */
+    -webkit-backface-visibility: hidden;
+    /*-webkit-perspective: 100;*/
+    -webkit-overflow-scrolling: touch; /* 2 */
+    text-align: justify; /* 3 */
+
+        }
+::-webkit-scrollbar {
+     display: none;
+}
+
+.container {
+
+}
+.container > div {
+    display: inline-block;
+    height:40px;
+    color: #afafb9;
+    text-align: center;
+    line-height: 25px;
+}
+.box{
+    width: 15%;
+
+}
+
+/*-----------------这是搜索框的开始----------------*/
+#buy-search{
+    height: 38px;
+    background-color: #fdfdfe;
+    display: flex;
+
+}
+#buy-search-area{
+    height: 30px;
+    flex: 1;
+    margin-bottom: 4px;
+    margin-right: 18px;
+    margin-left: 10px;
+    background-color: #f4f4f8;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    color: #b4b4ba;
+    font-size: 12px;
+}
+#all{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    background-image: url(../img/buy/分类.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#buy-search-text {
+    background-image: url(../img/search/放大镜.svg);
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 8px;
+
+}
+/*-----------------这是搜索框的结束----------------*/
+
+/********************************************************************/
+
+#buy-dynamic{
+    flex:1;
+    overflow: scroll;
+}
+#scroll-bar{
+
+    height: 124px;
+    width: 100%;
+    background-color: #000001;
+    display: flex;
+}
+
+/*-----------------------轮播开始------------------*/
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: outside none none;
+}
+.slider, .slider-panel img, .slider-extra {
+    width: 100%;
+    height: 124px;
+}
+.slider {
+    text-align: center;
+
+
+    position: relative;
+}
+.slider-panel, .slider-nav, .slider-pre, .slider-next {
+    position: absolute;
+    z-index: 8;
+}
+.slider-panel {
+    position: absolute;
+}
+.slider-panel img {
+    border: none;
+}
+.slider-extra {
+    position: relative;
+}
+.slider-nav {
+    margin-left: 20px;
+    position: absolute;
+    left: 80%;
+    bottom: 2px;
+}
+.slider-nav li {
+    background: #c4c4c4;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    /*margin: 0 2px;*/
+    margin-right: 4px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    height: 6px;
+
+    width: 6px;
+
+}
+.slider-nav .slider-item-selected {
+    background: white;
+
+
+}
+.slider-page a{
+    background: rgba(0, 0, 0, 0.2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-family: "simsun";
+    font-size: 22px;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    margin-top: -31px;
+    position: absolute;
+    top: 50%;
+}
+.slider-page a:HOVER {
+    background: rgba(0, 0, 0, 0.4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+}
+.slider-next {
+    left: 100%;
+    margin-left: -28px;
+}
+/*---------------------------------轮播结束-----------------------------*/
+#style{
+    height:120px;
+    background-image: url(../img/buy/style.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 1px solid #ebebed;
+}
+#discount{
+    height: 100px;
+    background-image: url(../img/buy/优惠券.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 1px solid #ebebed;
+}
+#prime-cost{
+    height: 80px;
+    background-image: url(../img/buy/原价购.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 1px solid #ebebed;
+}
+#cj{
+    height: 120px;
+    background-image: url(../img/buy/砍价抽奖.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 1px solid #ebebed;
+}
+#identification{
+    height: 50px;
+    background-image: url(../img/buy/认证.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.shop-img{
+    height:235px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 1px solid #ebebed;
+}

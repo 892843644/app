@@ -1,0 +1,91 @@
+#search{
+    height: 50px;
+    background-color: #fdfdfe;
+    display: flex;
+
+}
+#search-area{
+    height: 30px;
+    flex: 1;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #f4f4f8;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    color: #b4b4ba;
+    font-size: 12px;
+}
+
+#search-text{
+    background-image: url(../img/search/放大镜.svg);
+    height:18px ;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 8px;
+
+}
+.service-dynamic{
+
+    overflow: scroll;
+ }
+.help{
+    height: 100px;
+    background-image:url(../img/service/help.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+    border-bottom: 1px solid #ebebed ;
+}
+.service-question{
+    height:90px;
+    background-image:url(../img/service/question.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-bottom: #ebebed 10px solid;
+
+}
+.container-wrap {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: scroll; /* 1 */
+    -webkit-backface-visibility: hidden;
+    /*-webkit-perspective: 100;*/
+    -webkit-overflow-scrolling: touch; /* 2 */
+    text-align: justify; /* 3 */
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+
+}
+.container > div {
+    display: inline-block;
+    height:40px;
+    color: #afafb9;
+    text-align: center;
+    line-height: 25px;
+}
+.box{
+    margin-top: 5px;
+    font-size: 14px;
+    width: 20%;
+
+}
+.service-img{
+    height: 300px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

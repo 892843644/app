@@ -1,0 +1,39 @@
+#search{
+    height: 38px;
+    background-color: #fdfdfe;
+    display: flex;
+
+}
+#search-area{
+    height: 30px;
+    flex: 1;
+    margin-bottom: 4px;
+    margin-right: 25px;
+    margin-left: 10px;
+    background-color: #f4f4f8;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    color: #b4b4ba;
+    font-size: 12px;
+}
+#camera{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    background-image: url(../img/search/camera.svg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#search-text{
+    background-image: url(../img/search/放大镜.svg);
+    height:18px ;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 8px;
+
+}

@@ -1,0 +1,15 @@
+#follow-dynamic{
+    overflow: scroll;
+    flex: 1;
+
+}
+/*::-webkit-scrollbar{*/
+    /*display: none;*/
+/*}*/
+.follow-dynamic-display{
+        height: 610px;
+        border-bottom: 5px solid #f4f4f8;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+}

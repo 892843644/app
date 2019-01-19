@@ -1,0 +1,88 @@
+
+#scroll-bar{
+
+    height: 124px;
+    width: 100%;
+    background-color: #000001;
+    display: flex;
+}
+
+/*轮播模板*/
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: outside none none;
+}
+.slider, .slider-panel img, .slider-extra {
+    width: 100%;
+    height: 124px;
+}
+.slider {
+    text-align: center;
+
+
+    position: relative;
+}
+.slider-panel, .slider-nav, .slider-pre, .slider-next {
+    position: absolute;
+    z-index: 8;
+}
+.slider-panel {
+    position: absolute;
+}
+.slider-panel img {
+    border: none;
+}
+.slider-extra {
+    position: relative;
+}
+.slider-nav {
+    margin-left: 20px;
+    position: absolute;
+    left: 80%;
+    bottom: 2px;
+}
+.slider-nav li {
+    background: #c4c4c4;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    /*margin: 0 2px;*/
+    margin-right: 4px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    height: 6px;
+
+    width: 6px;
+
+}
+.slider-nav .slider-item-selected {
+    background: white;
+
+
+}
+.slider-page a{
+    background: rgba(0, 0, 0, 0.2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-family: "simsun";
+    font-size: 22px;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    margin-top: -31px;
+    position: absolute;
+    top: 50%;
+}
+.slider-page a:HOVER {
+    background: rgba(0, 0, 0, 0.4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+}
+.slider-next {
+    left: 100%;
+    margin-left: -28px;
+}

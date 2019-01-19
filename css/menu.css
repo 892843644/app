@@ -1,0 +1,43 @@
+
+
+
+#menus{
+    height: 75px;
+    background-color: #e2dcde;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-img{
+
+    width: 40px;
+
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin: 8px 18px 18px 20px;
+
+}
+#follow{
+    /*background-image: url(../img/menu/关注.jpg)*/
+}
+#discover{
+
+}
+
+
+
+
+
+/*}*/
+#discover{
+
+}
+#buy{
+
+}
+#service{
+
+}
+#me{
+
+}

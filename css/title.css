@@ -1,0 +1,70 @@
+#title{
+    background-color: #fdfdfe;
+    height: 80px;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+#title-right{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#title-right div{
+    width: 42px;
+    height: 68%;
+    background-position: center;
+    background-size: cover;
+}
+
+/*头像轮播*/
+#title-lift{
+    width: 80px;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    /*position: relative;*/
+}
+
+#lift-bottom{
+
+    top:46px;
+    left: 9px;
+    position: absolute;
+    bottom: 0px;
+    width: 27px;
+    height: 16px;
+    background-color: white;
+
+    font-size: 1px;
+    /*border: white 2px solid;*/
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+}
+#lift-bottom-font{
+    width: 100%;
+    height: 100%;
+    background-color: #fd3a68;
+    border-radius: 1px;
+    border: 1px solid white;
+
+
+}
+#lift-img{
+
+    top: 11px;
+    left: 13px;
+    border-radius: 50%;
+    /*margin-top: 9.5px;*/
+    /*margin-left: 12px;*/
+    width: 50px;
+    height: 50px;
+    position: relative;
+    /*background-color: #fd3a68;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

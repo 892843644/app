@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="../css/container.css" rel="stylesheet">
+    <link href="../css/signal.css" rel="stylesheet">
+    <link href="../css/change.css" rel="stylesheet">
+    <link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <!--这是信号层的开头-->
+        <div id="signal" class="">
+
+            <div id="signal-left" class=" xy-center ">14:15</div>
+            <div id="signal-center" class=""></div>
+            <div id="signal-right" class=" xy-center">
+                <div id="signal-area" class="">
+                    <div class="signal-ok "></div>
+                    <div class="signal-ok"></div>
+                    <div class="signal-ok"></div>
+                    <div class="signal-lose"></div>
+                </div>
+                <div id="xg" class="">4G</div>
+                <div id="battery-area" class="">
+                    <div id="battery-body">
+                        <div id="core" class="xy-center "></div>
+                    </div>
+                    <div id="battery-head" class="border"></div>
+                </div>
+            </div>
+        </div>
+        <!--这是信号层的结尾-->
+
+        <div id="change">
+        </div>
+        <!--菜单栏的开头-->
+
+        <div id="menus" class="">
+            <div id="follow" class="menu-img " data-normal="../img/menu/关注.jpg" data-press="../img/menu/关注-变.png" data-url="../page/follow-page.html"></div>
+            <div id="discover" class="menu-img " data-normal="../img/menu/发现.png" data-press="../img/menu/发现-变.jpg" data-url="../page/change-page.html/"></div>
+            <div id="buy" class="menu-img " data-normal="../img/menu/购买.jpg" data-press="../img/menu/购买-变.png" data-url="../page/buy-page.html"></div>
+            <div id="service" class="menu-img " data-normal="../img/menu/服务.jpg" data-press="../img/menu/服务-变.png" data-url="../page/service-page.html"></div>
+            <div id="me" class="menu-img " data-normal="../img/menu/我.jpg" data-press="../img/menu/我-变.png" data-url="../page/me-page.html"></div>
+
+        </div>
+        <!--菜单栏的结尾-->
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/round.js"> </script>
+<script>
+    $(function(){
+
+
+
+        $("#change").load("../page/change-page.html")
+
+        /*  控制底部图片*/
+        $("#menus div").each(function() {
+            $(this).css('background-image' , 'url('+$(this).data("normal")+')').css('background-size' , '80%');
+            // console.log($(this).data("normal"));
+        });
+
+        //当点击每一个
+        $(".menu-img").click( function() {
+
+            //让所有按钮的背景  再次变为 normal 状态
+            $(".menu-img").each(function(){
+                $(this).css('background-image' , 'url('+$(this).data("normal")+')');
+            });
+            //让被点击的层切换为  press
+            $(this).css('background-image' , 'url('+$(this).data("press")+')');
+
+            //
+            // $("#search").load($(this).data("url"))
+            // $("#scroll-bar").load($(this).data("url"))
+            // $("#title").load($(this).data("url"))
+            $("#change").load($(this).data("url"))
+
+        });
+
+    })
+
+</script>
+
+
+</html>

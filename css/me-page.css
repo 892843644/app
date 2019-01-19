@@ -1,0 +1,158 @@
+#me-first{
+    height: 45px;
+    display: flex;
+
+    justify-content: flex-end;
+}
+#me-tell{
+    width: 45px;
+    background-image: url(../img/me/通知.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    margin-right:8px;
+}
+#me-setting{
+    width: 45px;
+    background-image: url(../img/me/设置.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    margin-right: 10px;
+}
+/*-------------------第二层----------------------*/
+#me-second{
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+}
+#me-second-left{
+    width: 200px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+}
+#me-second-img{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/me/恐龙.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 50%;
+}
+#me-sex{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/me/男性.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+
+
+}
+#me-second-right{
+    width: 100px;
+    font-size: 13px;
+    color: #7c7c80;
+}
+#me-second-next{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/me/下一.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+/*------------------第三层---------------------------*/
+#me-third{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+.me-third-area{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+    border: 1px solid #f3f3f7;
+}
+.me-third-left{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.me-third-img{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+.me-third-right{
+    font-size: 13px;
+    color: #7c7c80;
+    margin-right: 12px;
+}
+.me-third-next{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/me/下一.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+/*-----------------------第四层--------------------------*/
+#me-fourth{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+.shoes{
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/me/球鞋.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+/*-----------------------第五层----------------------*/
+#me-fifth{
+    border-top: 10px solid #f3f3f7;
+    height: 55px;
+    border-bottom: 10px solid #f3f3f7;
+    display: flex;
+    justify-content: space-between;
+}
+.me-fifth-right{
+    width: 50px;
+    height: 36px;
+}
+
+.me-fifth-right-text{
+    height:18px ;
+    font-size:8px ;
+    color:black ;
+    font-weight: 100;
+    line-height: 18px;
+    text-align: center;
+}
+/*------------------------第六层---------------------*/
+#me-sixth{
+    height: 180px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.me-sixth-area{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+#me-background{
+    flex:1;
+    background-color:#f3f3f7;
+}
+.me-sixth-money{
+    height: 45px;
+    width: 45px;
+}
